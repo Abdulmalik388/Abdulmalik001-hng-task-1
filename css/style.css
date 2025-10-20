@@ -1,0 +1,217 @@
+/* Basic resets */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    line-height: 1.5;
+    color: #222;
+}
+
+/* Brand / theme */
+.bg-gradient {
+    background: linear-gradient(135deg, #2a9d8f 0%, #1b4965 100%);
+    color: white;
+}
+
+.navbar .brand-img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Hero */
+.hero-img {
+    object-fit: cover;
+    border: 3px solid rgba(23, 23, 23, 0.919);
+    cursor: pointer;
+}
+
+.hero-img:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.hero .btn {
+    min-width: 140px;
+}
+
+/* Cards / projects */
+.project-card {
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Utility */
+.container {
+    max-width: 1100px;
+}
+
+.lead {
+    font-size: 1.05rem;
+}
+
+.hero {
+    font-style: italic;
+}
+
+/* Footer */
+footer small {
+    opacity: .9;
+}
+
+/* Form focus & accessibility */
+input:focus,
+textarea:focus,
+button:focus {
+    outline: 3px solid rgba(43, 142, 195, .22);
+    outline-offset: 2px;
+    box-shadow: none;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: cursive;
+}
+
+/* Error text */
+.text-danger {
+    font-size: .9rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
+
+    .hero .hero-img {
+        margin: 0 auto;
+    }
+}
+
+/* High-contrast improvements */
+@media (prefers-contrast: high) {
+    .bg-gradient {
+        filter: contrast(1.15);
+    }
+}
+
+.card-1 {
+    background-color: rgb(26, 125, 26);
+    color: white;
+    cursor: pointer;
+}
+
+.card-1:hover {
+    background-color: rgb(33, 22, 97);
+    color: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card-2 {
+    background-color: rgb(125, 26, 26);
+    color: white;
+    cursor: pointer;
+}
+
+.card-2:hover {
+    background-color: rgb(58, 13, 5);
+    color: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card-3 {
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+}
+
+.card-3:hover {
+    background-color: rgb(8, 11, 107);
+    color: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: transform .2s ease, box-shadow .2s ease;
+    
+}
+
+.what-i-do {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: cursive;
+}
+/* ========================
+   ABOUT PAGE STYLES
+   ======================== */
+
+:root {
+  --abt-bg: #f8f9fb;
+  --abt-accent: #0d6efd;
+  --abt-muted: #6c757d;
+  --abt-card: #ffffff;
+  --abt-radius: 0.75rem;
+}
+
+.abt-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.abt-brand-img {
+  width: 42px;
+  height: 42px;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  object-fit: cover;
+}
+
+.abt-main {
+  background-color: var(--abt-bg);
+}
+
+.abt-hero {
+  background: linear-gradient(135deg, rgba(13, 110, 253, 0.05), rgba(0, 0, 0, 0.02));
+}
+
+.abt-profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.abt-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.abt-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(13, 110, 253, 0.1);
+}
+
+.abt-footer {
+  background-color: var(--abt-card);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .abt-profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .abt-hero {
+    padding: 1.5rem;
+  }
+}

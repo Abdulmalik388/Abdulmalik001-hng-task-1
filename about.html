@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About | Abdul Malik Lawal</title>
+
+  <!-- Google Font + Bootstrap -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+
+                    <img src="assets/profile.jpg" alt="Profile" class="brand-img me-2" width="40" height="40">
+                    <span class="logo">Frontend Wizards</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+                    aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navMain">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+  <!-- Main Content -->
+  <main data-testid="test-about-page" class="abt-main container py-5 mt-5 p-4">
+    <!-- Hero -->
+    <section class="abt-hero text-center mb-5 p-4 rounded-4 shadow-sm bg-light">
+      <img src="assets/profile.jpg" alt="Abdul Malik Lawal" class="abt-profile-img mb-3">
+      <h1 class="h3 mb-1 hero">Abdul Malik Lawal</h1>
+      <p class="lead text-muted mb-2 hero">Full Stack Developer — PHP/Laravel & Modern Frontend</p>
+      <p class="small text-secondary hero">Building accessible and performant web apps with empathy for users.</p>
+    </section>
+
+    <div class="row g-4">
+      <!-- Left column -->
+      <div class="col-lg-8">
+        <section class="abt-card card shadow-sm border-0 mb-4 bg-primary text-white">
+          <div class="card-body">
+            <h2 class="h5 fw-bold mb-2 ">Bio</h2>
+            <p data-testid="test-about-bio" class="text-white">
+              I’m <strong>Abdul Malik Lawal</strong> — a passionate Full Stack Developer from Lagos, Nigeria.
+              I build modern and scalable applications using <strong>PHP/Laravel</strong> on the backend
+              and React  for the frontend. My goal is to craft web solutions that are fast,
+              inclusive, and user-friendly.
+            </p>
+          </div>
+        </section>
+
+        <section class="abt-card card shadow-sm border-0 mb-4 bg-success text-white">
+          <div class="card-body">
+            <h2 class="h5 fw-bold mb-2">Goals in this program</h2>
+            <ul data-testid="test-about-goals" class="list-unstyled text-white mb-0">
+              <li>• Master React, TypeScript, and testing libraries</li>
+              <li>• Deepen my Laravel + API integration skills</li>
+              <li>• Build and deploy complete production-level applications</li>
+              <li>• Sharpen responsive and accessible UI development</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="abt-card card shadow-sm border-0 mb-4 bg-secondary text-white">
+          <div class="card-body">
+            <h2 class="h5 fw-bold mb-2">Areas of low confidence</h2>
+            <p data-testid="test-about-confidence" class="text-white">
+              I’m currently improving in testing frameworks, especially <strong>React Testing Library</strong>, Calling APIs with Axios,
+              and exploring automated deployments using GitHub Actions and CI/CD tools.
+            </p>
+          </div>
+        </section>
+
+        <section class="abt-card card shadow-sm border-0 mb-4 bg-danger text-white">
+          <div class="card-body">
+            <h2 class="h5 fw-bold mb-2">Note to future self</h2>
+            <p data-testid="test-about-future-note" class="text-white">
+              Keep learning, keep building. Every day of consistency compounds.
+              Don’t rush progress — perfect your craft, and mentor others coming behind you.
+            </p>
+          </div>
+        </section>
+
+        <section class="abt-card card shadow-sm border-0 mb-4 bg-dark text-white">
+          <div class="card-body">
+            <h2 class="h5 fw-bold mb-2">Extra thoughts</h2>
+            <p data-testid="test-about-extra" class="text-white">
+              Code with empathy, collaborate with humility, and communicate with clarity.
+              Push open-source contributions, and document everything you build — your journey matters.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="col-lg-4">
+        <div class="card shadow-sm mb-4 border-0 text-center">
+          <div class="card-body">
+            <h3 class="h6 fw-bold mb-3 text-primary">Quick Facts</h3>
+            <dl class="row text-start small mb-0">
+              <dt class="col-5">Location</dt>
+              <dd class="col-7">Lagos, Nigeria</dd>
+              <dt class="col-5">Languages</dt>
+              <dd class="col-7">English, Yoruba</dd>
+              <dt class="col-5">Certifications</dt>
+              <dd class="col-7">Frontend & Full Stack (Pally Tech)</dd>
+            </dl>
+            <a href="contact.html" class="btn btn-primary btn-sm mt-3">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="card shadow-sm border-0 mb-4">
+          <div class="card-body">
+            <h3 class="h6 fw-bold mb-3 text-primary">Tech & Tools</h3>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge bg-light text-dark border">PHP</span>
+              <span class="badge bg-light text-dark border">Laravel</span>
+              <span class="badge bg-light text-dark border">React</span>
+              <span class="badge bg-light text-dark border">Html</span>
+              <span class="badge bg-light text-dark border">Bootstrap</span>
+              <span class="badge bg-light text-dark border">Blade</span>
+              <span class="badge bg-light text-dark border">Git</span>
+              <span class="badge bg-light text-dark border">Css</span>
+              <span class="badge bg-light text-dark border">JavaScript</span>
+
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-3 mt-5">
+        <div class="container d-flex justify-content-between align-items-center">
+            <small>&copy; 2025 Abdul Malik Lawal</small>
+          
+        </div>
+    </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

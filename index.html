@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frontend Wizards | Home</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Optional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+
+                    <img src="assets/profile.jpg" alt="Profile" class="brand-img me-2" width="40" height="40">
+                    <span class="logo">Frontend Wizards</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+                    aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navMain">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main data-testid="test-home-page " class="mt-5 pt-4">
+        <!-- Hero -->
+        <section class="hero py-5 text-white bg-gradient">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <h1 class="display-5 fw-bold  text-dark">Hello — I’m Abdul Malik Lawal</h1>
+                        <strong class="lead text-dark">Full Stack Developer from Lagos. I build accessible, responsive,
+                            and delightful web experiences using PHP, Laravel, React and modern frontend tools.</strong>
+                        <div class="d-flex gap-2 mt-4">
+                            <a class="btn btn-primary" href="about.html">Learn About Me</a>
+                            <a class="btn btn-outline-primary" href="contact.html">Get In Touch</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 text-center mt-4 mt-lg-0">
+                        <img src="assets/profile.jpg" alt="Abdul Malik profile photo" class="rounded-circle hero-img"
+                            width="220" height="220">
+                        <p class="mt-2 small text-white-50">Full Stack Developer • Frontend & Backend • React • Laravel
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="container py-5">
+            <h1 class="mb-4 text-center what-i-do">What I Do</h1>
+            <div class="row g-4">
+                <article class="col-md-4">
+                    <div class="card h-100 shadow-sm card-1 ">
+                        <div class="card-body">
+                            <h3 class="h5">Frontend Development</h3>
+                            <p>HTML, CSS, Bootstrap, responsive design, accessibility and interactive UI components.</p>
+                            <p class="mb-0"><strong>Stack:</strong> HTML, CSS, JS, Bootstrap, React</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-4">
+                    <div class="card h-100 shadow-sm card-2">
+                        <div class="card-body">
+                            <h3 class="h5">Backend & APIs</h3>
+                            <p>Building RESTful APIs and server-side apps using PHP & Laravel, MySQL integration and
+                                auth flows.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-4">
+                    <div class="card h-100 shadow-sm card-3">
+                        <div class="card-body">
+                            <h3 class="h5">Project Workflows</h3>
+                            <p>Version control with Git, deployments to Vercel/Netlify, and CI-ready structures for
+                                production apps.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="mb-0">Selected Projects</h2>
+                    <a class="btn btn-outline-primary" href="https://github.com/Abdulmalik388" target="_blank"
+                        rel="noopener" aria-label="View GitHub">
+                        View GitHub <i class="fab fa-github ms-2"></i>
+                    </a>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Project 1 -->
+                    <div class="col-md-6">
+                        <article class="card h-100 border-0 shadow-sm overflow-hidden">
+                            <div class="row g-0 h-100">
+                                <div class="col-12 col-sm-12">
+                                    <div class="card-body d-flex flex-column">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <h3 class="h5 mb-1">E-commerce Laravel <span
+                                                    class="badge bg-primary ms-2">Laravel</span></h3>
+                                        </div>
+                                        <p class="text-muted small mb-2">A full Laravel e-commerce app with cart
+                                            persistence, admin product management, and an orders system.</p>
+                                        <ul class="list-unstyled small text-muted mb-3">
+                                            <li>• Routes: Products, Cart, Checkout, Orders</li>
+                                            <li>• Database: MySQL migrations & seeders</li>
+                                        </ul>
+                                        <div class="mt-auto d-flex gap-2">
+                                            <a class="btn btn-sm btn-primary"
+                                                href="https://github.com/Abdulmalik388/laravel_ecommerce"
+                                                target="_blank" rel="noopener" aria-label="Open e-commerce project">
+                                                <i class="fab fa-github me-1"></i> Source
+                                            </a>
+                                            <a class="btn btn-sm btn-outline-secondary"
+                                                href="https://github.com/Abdulmalik388/laravel_ecommerce"
+                                                aria-label="Live demo unavailable" aria-disabled="true" tabindex="-1"
+                                                disabled>
+                                                Live demo
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="col-md-6">
+                        <article class="card h-100 border-0 shadow-sm">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex align-items-start justify-content-between">
+                                    <h3 class="h5 mb-1">Responsive Portfolio <span
+                                            class="badge bg-info text-dark ms-2">React</span></h3>
+                                </div>
+                                <p class="text-muted small mb-3">Modern portfolio built with React and Vite, deployed to
+                                    Vercel with CI/CD and performance optimizations.</p>
+
+                                <div class="mb-3">
+                                    <span class="badge bg-secondary me-1">React</span>
+                                    <span class="badge bg-secondary me-1">Vite</span>
+                                    <span class="badge bg-secondary">Vercel</span>
+                                </div>
+
+                                <div class="mt-auto d-flex gap-2">
+                                    <a class="btn btn-sm btn-primary" href="https://abdulmalik-portfolio-kap.vercel.app"
+                                        target="_blank" rel="noopener" aria-label="Open portfolio live demo">
+                                        Live demo <i class="fa fa-up-right-from-square ms-1" aria-hidden="true"></i>
+                                    </a>
+                                    <a class="btn btn-sm btn-outline-primary"
+                                        href="https://github.com/Abdulmalik388/My-portfolio" target="_blank"
+                                        rel="noopener" aria-label="Open portfolio source">
+                                        <i class="fab fa-github me-1"></i> Source
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="container py-5">
+            <h2 class="mb-4 text-center">Testimonials</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm bg-white rounded" style="transition: transform .18s ease; cursor: pointer;">
+                <div class="card-body d-flex flex-column">
+                    <p class="mb-3 fst-italic text-dark">“Fast, reliable, and communicates clearly. Excellent attention to detail.”</p>
+                    <div class="mb-3">
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-alt text-warning"></i>
+                    </div>
+                    <div class="mt-auto d-flex align-items-center">
+                    <img src="assets/product-manager.png" alt="Client A" class="rounded-circle me-3" width="68" height="68">
+                    <div>
+                        <strong>Client A</strong>
+                        <div class="small text-muted">Product Manager</div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm bg-white rounded" style="transition: transform .18s ease; cursor: pointer;">
+                <div class="card-body d-flex flex-column">
+                    <p class="mb-3 fst-italic text-dark">“Delivered the project ahead of schedule and implemented accessibility best practices.”</p>
+                    <div class="mb-3">
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    </div>
+                    <div class="mt-auto d-flex align-items-center">
+                    <img src="assets/founder.png" alt="Client B" class="rounded-circle me-3" width="68" height="68">
+                    <div>
+                        <strong>Client B</strong>
+                        <div class="small text-muted">Founder</div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm bg-white rounded" style="transition: transform .18s ease; cursor: pointer;">
+                <div class="card-body d-flex flex-column">
+                    <p class="mb-3 fst-italic text-dark">“Great problem solver and a pleasure to work with.”</p>
+                    <div class="mb-3">
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-alt text-warning"></i>
+                    </div>
+                    <div class="mt-auto d-flex align-items-center">
+                    <img src="assets/peer.png" alt="Peer" class="rounded-circle me-3" width="68" height="68">
+                    <div>
+                        <strong>Peer</strong>
+                        <div class="small text-muted">Frontend Engineer</div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        </main>
+
+    <footer class="bg-dark text-white py-3 mt-5">
+        <div class="container d-flex justify-content-between align-items-center">
+            <small>&copy; 2025 Abdul Malik Lawal</small>
+            <div>
+                <a class="text-white me-2" href="https://github.com/Abdulmalik388" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a class="text-white" href="https://www.linkedin.com/in/abdulmalik388/" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (Popper included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- App JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
