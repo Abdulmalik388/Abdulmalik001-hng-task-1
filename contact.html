@@ -5,114 +5,169 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact | Frontend Wizards</title>
 
-  <!-- Bootstrap CSS CDN -->
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background: #f9fafc;
+    }
+    .brand-img {
+      border-radius: 50%;
+    }
+    .toast {
+      min-width: 280px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" aria-label="Main navigation">
-            <div class="container">
-                <a class="navbar-brand d-flex align-items-center" href="index.html">
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/profile.jpg" alt="Profile" class="brand-img me-2" width="40" height="40">
+        <span class="logo fw-bold">Frontend Wizards</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                    <img src="assets/profile.jpg" alt="Profile" class="brand-img me-2" width="40" height="40">
-                    <span class="logo">Frontend Wizards</span>
-                </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
-                    aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navMain">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-  <main class="container py-5 mt-5 p-4" data-testid="test-contact-page" aria-labelledby="contact-heading">
-    <h1 id="contact-heading" class="h3 mb-3">Contact Us</h1>
-    <p class="text-muted">Have a project or question? Send a message and I’ll get back to you soon.</p>
-
-    <div class="row">
-      <div class="col-lg-7">
-        <form id="contactForm" novalidate>
-          <!-- Full name -->
-          <div class="mb-3">
-            <label for="name" class="form-label">Full name</label>
-            <input type="text" id="name" class="form-control" data-testid="test-contact-name" aria-describedby="error-name" required>
-            <div id="error-name" class="form-text text-danger" data-testid="test-contact-error-name" aria-live="polite"></div>
-          </div>
-
-          <!-- Email -->
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" id="email" class="form-control" data-testid="test-contact-email" aria-describedby="error-email" required>
-            <div id="error-email" class="form-text text-danger" data-testid="test-contact-error-email" aria-live="polite"></div>
-          </div>
-
-          <!-- Subject -->
-          <div class="mb-3">
-            <label for="subject" class="form-label">Subject</label>
-            <input type="text" id="subject" class="form-control" data-testid="test-contact-subject" aria-describedby="error-subject" required>
-            <div id="error-subject" class="form-text text-danger" data-testid="test-contact-error-subject" aria-live="polite"></div>
-          </div>
-
-          <!-- Message -->
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea id="message" class="form-control" rows="6" data-testid="test-contact-message" aria-describedby="error-message" required></textarea>
-            <div id="error-message" class="form-text text-danger" data-testid="test-contact-error-message" aria-live="polite"></div>
-          </div>
-
-          <div class="d-flex align-items-center gap-3">
-            <button type="submit" class="btn btn-primary" data-testid="test-contact-submit">Send Message</button>
-            <div id="success" class="text-success" role="status" aria-live="polite" data-testid="test-contact-success"></div>
-          </div>
-        </form>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+        </ul>
       </div>
-
-      <aside class="col-lg-5">
-        <div class="card shadow-sm p-3 mb-3 bg-secondary text-white">
-          <h2 class="h6">Contact Info</h2>
-          <p class="mb-1"><strong>Email:</strong> abdulmaliklawal388@gmail.com</p>
-          <p class="mb-1"><strong>Phone:</strong> 08081168026</p>
-          <p class="mb-0"><strong>Location:</strong> Lagos, Nigeria</p>
-        </div>
-
-        <div class="card shadow-sm p-3 bg-secondary text-white">
-          <h2 class="h6">Office Hours</h2>
-          <p class="mb-1">Mon - Fri: 9:00 - 17:00</p>
-          <p class="mb-0">Sat - Sun: By appointment</p>
-        </div>
-      </aside>
     </div>
-  </main>
-  <!-- Toast Notification -->
-  <div class="position-fixed top-0 start-50 translate-middle-x p-3" style="z-index: 9999;">
-    <div id="successToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="d-flex">
-        <div class="toast-body">
-          ✅ Message sent successfully! Redirecting to homepage...
+  </nav>
+</header>
+
+<main class="container py-5 mt-5 p-4" aria-labelledby="contact-heading">
+  <h1 id="contact-heading" class="h3 mb-3">Contact Us</h1>
+  <p class="text-muted">Have a project or question? Send a message and I’ll get back to you soon.</p>
+
+  <div class="row">
+    <div class="col-lg-7">
+      <form id="contactForm" novalidate>
+        <div class="mb-3">
+          <label for="name" class="form-label">Full name</label>
+          <input type="text" id="name" class="form-control" required>
+          <div id="error-name" class="text-danger small mt-1"></div>
         </div>
-        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" class="form-control" required>
+          <div id="error-email" class="text-danger small mt-1"></div>
+        </div>
+
+        <div class="mb-3">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="text" id="subject" class="form-control" required>
+          <div id="error-subject" class="text-danger small mt-1"></div>
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" class="form-control" rows="6" required></textarea>
+          <div id="error-message" class="text-danger small mt-1"></div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+
+    <aside class="col-lg-5">
+      <div class="card shadow-sm p-3 mb-3 bg-secondary text-white">
+        <h2 class="h6">Contact Info</h2>
+        <p class="mb-1"><strong>Email:</strong> abdulmaliklawal388@gmail.com</p>
+        <p class="mb-1"><strong>Phone:</strong> 08081168026</p>
+        <p class="mb-0"><strong>Location:</strong> Lagos, Nigeria</p>
       </div>
+
+      <div class="card shadow-sm p-3 bg-secondary text-white">
+        <h2 class="h6">Office Hours</h2>
+        <p class="mb-1">Mon - Fri: 9:00 - 17:00</p>
+        <p class="mb-0">Sat - Sun: By appointment</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<!-- Toast -->
+<div class="position-fixed top-0 start-50 translate-middle-x p-3" style="z-index: 1055;">
+  <div id="successToast" class="toast text-bg-success" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        ✅ Message sent successfully! Redirecting to homepage...
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
     </div>
   </div>
-  <footer class="bg-dark text-white py-3 mt-5">
-        <div class="container d-flex justify-content-between align-items-center">
-            <small>&copy; 2025 Abdul Malik Lawal</small>
-           
-        </div>
-    </footer>
+</div>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
+<footer class="bg-dark text-white py-3 mt-5">
+  <div class="container text-center">
+    <small>&copy; 2025 Abdul Malik Lawal</small>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ✅ Form Validation Script -->
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  // Reset errors
+  document.querySelectorAll('.text-danger').forEach(el => el.textContent = '');
+
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const subject = document.getElementById('subject').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  let isValid = true;
+
+  // Name validation
+  if (name === '') {
+    document.getElementById('error-name').textContent = 'Full name is required.';
+    isValid = false;
+  }
+
+  // Email validation
+  const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  if (email === '') {
+    document.getElementById('error-email').textContent = 'Email is required.';
+    isValid = false;
+  } else if (!emailPattern.test(email)) {
+    document.getElementById('error-email').textContent = 'Please enter a valid email address.';
+    isValid = false;
+  }
+
+  // Subject validation
+  if (subject === '') {
+    document.getElementById('error-subject').textContent = 'Subject is required.';
+    isValid = false;
+  }
+
+  // Message validation
+  if (message === '') {
+    document.getElementById('error-message').textContent = 'Message cannot be empty.';
+    isValid = false;
+  }
+
+  if (isValid) {
+    const toast = new bootstrap.Toast(document.getElementById('successToast'));
+    toast.show();
+
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 2500);
+  }
+});
+</script>
 </body>
 </html>
